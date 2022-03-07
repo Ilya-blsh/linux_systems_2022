@@ -1,3 +1,6 @@
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key 
+
 echo 'deb https://dl.winehq.org/wine-builds/debian/ buster main' > /tmp/winehq.list
 sudo cp /tmp/winehq.list /etc/apt/sources.list.d/
 rm /tmp/winehq.list
